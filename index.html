@@ -16,7 +16,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 80px;
+
 }
 
 body {
@@ -57,21 +57,39 @@ nav a {
 nav a:hover {
   color: #3284ff;
 }
+.search{
+  display: flex;
+  align-items: center;
+  flex: 1;
+  max-width: 650px;
+  margin: 0 35px;
+  padding: 6px 7px 6px 18px;
+  gap: 12px;
+  background: #111722;
+  border: 1px solid #29364a;
+  border-radius: 30px;
+  transition: .3s;
+
+}
+
 .search input{
-    border-radius: 20px;
-    width: 150%;
-    height: 70%;
-    background: rgb(20, 9, 51);
-    color: white;
+   flex: 1;
+   min-width: 0;
+   padding: 12px 0;
+   border: none;
+   outline: none;
+   background: transparent;
+   color: white;
+   font-size: 14px;
 }
 .search ::placeholder{
     text-align: center;
-    color: white;
+    color: #78869b;
 }
 .search i{
-    position: absolute;
-    right: 61%;
-    top: 25px;
+    position: static;
+    color: #7d9fcf;
+    flex-shrink: 0;
 }
 
 
@@ -121,6 +139,7 @@ nav a:hover {
 
 section {
   padding: 65px 8%;
+    scroll-padding-top: 80px;
 }
 
 .heading {
@@ -247,43 +266,7 @@ footer {
 }
 
 
-@media (max-width: 750px) {
-  nav {
-    padding: 18px 5%;
-  }
 
-  nav a {
-    margin-left: 10px;
-    font-size: 12px;
-  }
-
-  .logo {
-    font-size: 22px;
-  }
-
-  .hero {
-    min-height: 420px;
-    padding: 75px 5%;
-  }
-
-  .hero h1 {
-    font-size: 39px;
-  }
-
-  section {
-    padding: 45px 5%;
-  }
-
-  .cars,
-  .feature-list {
-    grid-template-columns: 1fr;
-  }
-
-  footer {
-    flex-direction: column;
-    text-align: center;
-  }
-}
 
 </style>
 </head>
