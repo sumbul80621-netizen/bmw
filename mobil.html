@@ -42,6 +42,14 @@ nav {
   font-weight: bold;
   letter-spacing: 2px;
 }
+.logo img{
+  position: relative;
+  top: 10px;
+  left: -10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+}
 
 .logo span {
   color: #3284ff;
@@ -264,7 +272,20 @@ footer {
   color: #94a3b8;
   font-size: 13px;
 }
-
+footer img{
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+}
+.ig{
+display: flex;
+}
+.tiktok{
+display: flex;
+}
+.wa{
+  display: flex;
+}
 
 
 
@@ -274,10 +295,11 @@ footer {
 <body>
 
 <nav>
-  <div class="logo">BMW<span>.</span></div>
+  <div class="logo">
+     <img src="logo.jpeg" alt="">BMW<span>.</span></div>
    <div class="search">
       <i class="fa-solid fa-magnifying-glass"></i>
-  <input type="search" placeholder="search"></div>
+  <input type="search" id="cari" placeholder="search"></div>
 
   <div>
     <a href="#home">Home</a>
@@ -288,6 +310,7 @@ footer {
 
 <header class="hero" id="home">
   <div>
+   
     <h1>the cars <span>BMW.</span></h1>
 
     <p>
@@ -302,24 +325,24 @@ footer {
 
 <section id="cars">
   <div class="heading">
-    <h2>Our Collection</h2>
-    <p>Discover your next driving experience.</p>
+    <h2>car bmw</h2>
+    <p>pilih lah mobil yang kamu suka</p>
   </div>
 
-  <div class="cars">
+  <div class="cars" id="daftar-mobil">
 
     <article class="car">
       <img src="ggg.jpeg" alt="BMW M3">
 
       <div class="content">
         <p class="type">SPORT SEDAN</p>
-        <h3>BMW M3</h3>
+        <h3 class="nama">BMW M3</h3>
         <p>
           Karakter sporty, desain agresif,
           dan performa yang mengesankan.
         </p>
         <p class="price">Rp 2,1 M</p>
-        <a href="#contact" class="btn">View Details</a>
+        <a href="mobil1.html" class="btn">View Details</a>
       </div>
     </article>
 
@@ -328,28 +351,28 @@ footer {
 
       <div class="content">
         <p class="type">SPORT COUPE</p>
-        <h3>BMW M4</h3>
+        <h3 class="nama">BMW M4</h3>
         <p>
           Coupe premium dengan tampilan
           tegas dan karakter dinamis.
         </p>
         <p class="price">Rp 2,4 M</p>
-        <a href="#contact" class="btn">View Details</a>
+        <a href="mobil2.html" class="btn">View Details</a>
       </div>
     </article>
 
     <article class="car">
-      <img src="mobil.jpeg" alt="BMW X5">
+      <img src="vvv.jpeg" alt="BMW X5">
 
       <div class="content">
         <p class="type">LUXURY SUV</p>
-        <h3>BMW X5</h3>
+        <h3 class="nama">BMW X5</h3>
         <p>
           SUV premium dengan kabin luas
           dan kenyamanan untuk perjalanan.
         </p>
         <p class="price">Rp 1,8 M</p>
-        <a href="#contact" class="btn">View Details</a>
+        <a href="mobil3.html" class="btn">View Details</a>
       </div>
     </article>
 
@@ -358,7 +381,7 @@ footer {
 
 <section class="features">
   <div class="heading">
-    <h2>The BMW Experience</h2>
+    <h2>The BMW </h2>
     <p>More than a car. A driving experience.</p>
   </div>
 
@@ -408,8 +431,48 @@ footer {
 </section>
 
 <footer>
+  <div class="ig">
+     <img src="ig.jpeg" alt="">
+     <h1>instragram</h1>
+  </div>
+  <div class="tiktok">
+     <img src="tiktok.jpeg" alt="">
+    <h1> tiktok</h1>
+  </div>
+  <div class="wa">
+     <img src="wa.jpeg" alt="">
+     <h1>whatsApp</h1>
+  </div>
+ 
+  
  
 </footer>
+ <script>
+    const cari =
+    document.getElementById("cari");
+    const mobil =
+    document.querySelectorAll(".car");
 
+     cari.addEventListener("input",function() {
+      let kata = 
+      cari.value.toLowerCase();
+      mobil.forEach(function(item) {
+        let nama =
+        item.querySelector(".nama")
+        .textContent.
+        toLowerCase();
+
+        if (nama.includes(kata)){
+          item.style.display = 
+          ""; 
+                  } else {
+                    item.style.display ="none"
+                  }
+      });
+     });
+    
+
+
+  </script>
 </body>
 </html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW 320i M Sport</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+
+        body {
+            background: #080b12;
+            color: #f8fafc;
+        }
+
+        .hero {
+            min-height: 640px;
+            padding: 80px 8%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
+            background:
+                linear-gradient(90deg, #080b12 5%, #080b12cc 48%, #080b1240),
+                url("ggg.jpeg") center/cover no-repeat;
+        }
+
+        .info {
+            flex: 1;
+            max-width: 550px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            line-height: 1.2;
+            margin-bottom: 25px;
+        }
+
+        .hero h1 span {
+            color: #3284ff;
+        }
+
+        .spesifikasi {
+            color: #a7b2c3;
+            line-height: 2;
+            margin-bottom: 25px;
+        }
+
+        .spesifikasi span {
+            color: #f8fafc;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 24px;
+            background: #1769e8;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: .3s;
+        }
+
+        .btn:hover {
+            background: #0d4db5;
+            transform: translateY(-2px);
+        }
+
+        .foto {
+            flex: 1;
+            max-width: 630px;
+            height: 430px;
+            padding: 15px;
+            background: #080b12;
+            border-radius: 12px;
+            transition: .3s;
+        }
+
+        .foto:hover {
+            background: #0d4db5;
+            transform: translateY(-5px);
+        }
+
+        .foto img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 7px;
+        }
+
+       
+    </style>
+</head>
+
+<body>
+
+    <header class="hero" id="home">
+
+        <div class="info">
+            <h1>BMW 320i <span>M Sport</span></h1>
+
+            <div class="spesifikasi">
+             BMW 330i M Sport
+
+                Jenis Mobil        : <span>sedan sport</span><br>
+                Merek              : <span>BMW</span><br>
+                Mesin              : <span>2.0L Twinpower turbo</span><br>
+                Tenaga Maksimum    : <span>258ps</span><br>
+                Torsi Maksimum     : <span>400 Nm</span><br>
+                Transmisi          : <span>Otomatis</span><br>
+                Penggerak          : <span>Roda Belakang</span><br>
+                Kecepatan Maks     : <span>Sekitar 250 km/jam</span><br>
+                0-100 km/jam       : <span>Sekitar 5,8 detik</span><br>
+                Bahan Bakar        : <span>Bensin</span><br>
+                Kapasitas Tangki   : <span>Sekitar 59 liter</span><br>
+                Kapasitas Kursi    : <span>5 orang</span>
+            </div>
+
+            <a href="#cars" class="btn">
+                <i class="fa-solid fa-cart-shopping"></i> Buy
+            </a>
+        </div>
+
+        <div class="foto">
+            <img src="ccc.jpeg" alt="BMW 320i M Sport">
+        </div>
+
+    </header>
+
+</body>
+</html>
